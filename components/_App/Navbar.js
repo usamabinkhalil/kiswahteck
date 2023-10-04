@@ -70,14 +70,12 @@ const Navbar = () => {
                     <Link
                       href="/"
                       onClick={toggleNavbar}
-                      className={`nav-link ${
-                        currentPath == "/" && "active"
-                      }`}
+                      className={`nav-link ${currentPath == "/" && "active"}`}
                     >
-                      Home <Icon.ChevronDown />
+                      Home
                     </Link>
 
-                    <ul className="dropdown-menu">
+                    {/* <ul className="dropdown-menu">
                       <li className="nav-item">
                         <Link
                           href="/"
@@ -198,7 +196,7 @@ const Navbar = () => {
                           PC Repair
                         </Link>
                       </li>
-                    </ul>
+                    </ul> */}
                   </li>
 
                   <li className="nav-item">
@@ -209,395 +207,23 @@ const Navbar = () => {
                         currentPath == "/about-1/" && "active"
                       }`}
                     >
-                      About <Icon.ChevronDown />
+                      About
                     </Link>
-
-                    <ul className="dropdown-menu">
-                      <li className="nav-item">
-                        <Link
-                          href="/about-1/"
-                          onClick={toggleNavbar}
-                          className={`nav-link ${
-                            currentPath == "/about-1/" && "active"
-                          }`}
-                        >
-                          About Style 1
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          href="/about-2/"
-                          onClick={toggleNavbar}
-                          className={`nav-link ${
-                            currentPath == "/about-2/" && "active"
-                          }`}
-                        >
-                          About Style 2
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          href="/about-3/"
-                          onClick={toggleNavbar}
-                          className={`nav-link ${
-                            currentPath == "/about-3/" && "active"
-                          }`}
-                        >
-                          About Style 3
-                        </Link>
-                      </li>
-                    </ul>
                   </li>
 
                   <li className="nav-item">
                     <Link
-                      href="#"
-                      onClick={(e) => e.preventDefault()}
-                      className="nav-link"
-                    >
-                      Pages <Icon.ChevronDown />
-                    </Link>
-
-                    <ul className="dropdown-menu">
-                      <li className="nav-item">
-                        <Link
-                          href="/features/"
-                          onClick={toggleNavbar}
-                          className={`nav-link ${
-                            currentPath == "/features/" && "active"
-                          }`}
-                        >
-                          Features <Icon.ChevronDown />
-                        </Link>
-
-                        <ul className="dropdown-menu">
-                          <li className="nav-item">
-                            <Link
-                              href="/features/"
-                              onClick={toggleNavbar}
-                              className={`nav-link ${
-                                currentPath == "/features/" && "active"
-                              }`}
-                            >
-                              Features
-                            </Link>
-                          </li>
-
-                          <li className="nav-item">
-                            <Link
-                              href="/feature-details/"
-                              onClick={toggleNavbar}
-                              className={`nav-link ${
-                                currentPath == "/feature-details/" && "active"
-                              }`}
-                            >
-                              Features Details
-                            </Link>
-                          </li>
-                        </ul>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          href="/services-1/"
-                          onClick={toggleNavbar}
-                          className={`nav-link ${
-                            currentPath == "/services-1/" && "active"
-                          }`}
-                        >
-                          Services <Icon.ChevronDown />
-                        </Link>
-
-                        <ul className="dropdown-menu">
-                          <li className="nav-item">
-                            <Link
-                              href="/services-1/"
-                              onClick={toggleNavbar}
-                              className={`nav-link ${
-                                currentPath == "/services-1/" && "active"
-                              }`}
-                            >
-                              Services Style 1
-                            </Link>
-                          </li>
-
-                          <li className="nav-item">
-                            <Link
-                              href="/services-2/"
-                              onClick={toggleNavbar}
-                              className={`nav-link ${
-                                currentPath == "/services-2/" && "active"
-                              }`}
-                            >
-                              Services Style 2
-                            </Link>
-                          </li>
-
-                          <li className="nav-item">
-                            <Link
-                              href="/services-3/"
-                              onClick={toggleNavbar}
-                              className={`nav-link ${
-                                currentPath == "/services-3/" && "active"
-                              }`}
-                            >
-                              Services Style 3
-                            </Link>
-                          </li>
-
-                          <li className="nav-item">
-                            <Link
-                              href="/services-4/"
-                              onClick={toggleNavbar}
-                              className={`nav-link ${
-                                currentPath == "/services-4/" && "active"
-                              }`}
-                            >
-                              Services Style 4
-                            </Link>
-                          </li>
-
-                          <li className="nav-item">
-                            <Link
-                              href="/services-5/"
-                              onClick={toggleNavbar}
-                              className={`nav-link ${
-                                currentPath == "/services-5/" && "active"
-                              }`}
-                            >
-                              Services Style 5
-                            </Link>
-                          </li>
-
-                          <li className="nav-item">
-                            <Link
-                              href="/service-details/"
-                              onClick={toggleNavbar}
-                              className={`nav-link ${
-                                currentPath == "/service-details/" && "active"
-                              }`}
-                            >
-                              Services Details
-                            </Link>
-                          </li>
-                        </ul>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          href="/feedback/"
-                          onClick={toggleNavbar}
-                          className={`nav-link ${
-                            currentPath == "/feedback/" && "active"
-                          }`}
-                        >
-                          Feedback
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          href="/projects-1/"
-                          onClick={toggleNavbar}
-                          className={`nav-link ${
-                            currentPath == "/projects-1/" && "active"
-                          }`}
-                        >
-                          Projects <Icon.ChevronDown />
-                        </Link>
-
-                        <ul className="dropdown-menu">
-                          <li className="nav-item">
-                            <Link
-                              href="/projects-1/"
-                              onClick={toggleNavbar}
-                              className={`nav-link ${
-                                currentPath == "/projects-1/" && "active"
-                              }`}
-                            >
-                              Project Style 1
-                            </Link>
-                          </li>
-
-                          <li className="nav-item">
-                            <Link
-                              href="/projects-2/"
-                              onClick={toggleNavbar}
-                              className={`nav-link ${
-                                currentPath == "/projects-2/" && "active"
-                              }`}
-                            >
-                              Project Style 2
-                            </Link>
-                          </li>
-
-                          <li className="nav-item">
-                            <Link
-                              href="/project-details/"
-                              onClick={toggleNavbar}
-                              className={`nav-link ${
-                                currentPath == "/project-details/" && "active"
-                              }`}
-                            >
-                              Project Details
-                            </Link>
-                          </li>
-                        </ul>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          href="/team/"
-                          onClick={toggleNavbar}
-                          className={`nav-link ${
-                            currentPath == "/team/" && "active"
-                          }`}
-                        >
-                          Team
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          href="/pricing/"
-                          onClick={toggleNavbar}
-                          className={`nav-link ${
-                            currentPath == "/pricing/" && "active"
-                          }`}
-                        >
-                          Pricing
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          href="/login/"
-                          onClick={toggleNavbar}
-                          className={`nav-link ${
-                            currentPath == "/login/" && "active"
-                          }`}
-                        >
-                          User <Icon.ChevronDown />
-                        </Link>
-
-                        <ul className="dropdown-menu">
-                          <li className="nav-item">
-                            <Link
-                              href="/login/"
-                              onClick={toggleNavbar}
-                              className={`nav-link ${
-                                currentPath == "/login/" && "active"
-                              }`}
-                            >
-                              Login
-                            </Link>
-                          </li>
-
-                          <li className="nav-item">
-                            <Link
-                              href="/sign-up/"
-                              onClick={toggleNavbar}
-                              className={`nav-link ${
-                                currentPath == "/sign-up/" && "active"
-                              }`}
-                            >
-                              Sign Up
-                            </Link>
-                          </li>
-
-                          <li className="nav-item">
-                            <Link
-                              href="/forgot-password/"
-                              onClick={toggleNavbar}
-                              className={`nav-link ${
-                                currentPath == "/forgot-password/" && "active"
-                              }`}
-                            >
-                              Forgot Password
-                            </Link>
-                          </li>
-                        </ul>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          href="/faq/"
-                          onClick={toggleNavbar}
-                          className={`nav-link ${
-                            currentPath == "/faq/" && "active"
-                          }`}
-                        >
-                          FAQ's
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          href="/coming-soon/"
-                          onClick={toggleNavbar}
-                          className={`nav-link ${
-                            currentPath == "/coming-soon/" && "active"
-                          }`}
-                        >
-                          Coming Soon
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          href="/404/"
-                          onClick={toggleNavbar}
-                          className={`nav-link ${
-                            currentPath == "/404/" && "active"
-                          }`}
-                        >
-                          404 Error Page
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li className="nav-item">
-                    <Link
-                      href="/shop/"
+                      href="/projects-2/"
                       onClick={toggleNavbar}
                       className={`nav-link ${
-                        currentPath == "/shop/" && "active"
+                        currentPath == "/projects-2/" && "active"
                       }`}
                     >
-                      Shop <Icon.ChevronDown />
+                      Portfolio
                     </Link>
-
-                    <ul className="dropdown-menu">
-                      <li className="nav-item">
-                        <Link
-                          href="/shop/"
-                          onClick={toggleNavbar}
-                          className={`nav-link ${
-                            currentPath == "/shop/" && "active"
-                          }`}
-                        >
-                          Shop
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          href="/checkout/"
-                          onClick={toggleNavbar}
-                          className={`nav-link ${
-                            currentPath == "/checkout/" && "active"
-                          }`}
-                        >
-                          Checkout
-                        </Link>
-                      </li>
-                    </ul>
                   </li>
 
-                  <li className="nav-item">
+                  {/* <li className="nav-item">
                     <Link
                       href="/blog-1/"
                       onClick={toggleNavbar}
@@ -693,7 +319,7 @@ const Navbar = () => {
                         </Link>
                       </li>
                     </ul>
-                  </li>
+                  </li> */}
 
                   <li className="nav-item">
                     <Link
@@ -708,22 +334,6 @@ const Navbar = () => {
                   </li>
                 </ul>
               </div>
-
-              {/* Others option */}
-              {/* <div className="others-option">
-                <Link href="/cart/" className="cart-wrapper-btn">
-                  <Icon.ShoppingCart />
-                  <span>{cart.length}</span>
-                </Link>
-
-                <Link href="/contact/" className="btn btn-light">
-                  Support
-                </Link>
-
-                <Link href="/login/" className="btn btn-primary">
-                  Login
-                </Link>
-              </div> */}
             </nav>
           </div>
         </div>
